@@ -1,0 +1,15 @@
+orders = []
+for i in range(0,5):
+    order = input(f"Enter order number {i+1}: ")
+    orders.append(order)
+additional_order = input(f"Enter additional order number: ")
+orders.append(additional_order)
+priority_order = input(f"Enter priority order number: ")
+orders.insert(0,priority_order)
+search_order = input(f"Enter search order number: ")
+quantity = orders.count(search_order)
+first_index = orders.index(search_order)
+cancel_order = input(f"Enter cancel order number: ")
+orders.remove(cancel_order)
+order.pop(6)
+print("Last Order Removed:")
